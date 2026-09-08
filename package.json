@@ -1,0 +1,25 @@
+{
+  "name": "mhartl-palindrome",
+  "version": "0.1.0",
+  "description": "Palindrome detector",
+  "keywords": [
+    "palindrome",
+    "learn-enough",
+    "javascript"
+  ],
+  "homepage": "https://github.com/mhartl/mhartl-palindrome#readme",
+  "bugs": {
+    "url": "https://github.com/mhartl/mhartl-palindrome/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhartl/mhartl-palindrome.git"
+  },
+  "license": "ISC",
+  "author": "Michael Hartl",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  }
+}
