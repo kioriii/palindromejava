@@ -32,9 +32,13 @@ function Phrase(content) {
     // return this.content; // stub return value
 
     // Functional programming solution
-    return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("");
-  }
+  //   return Array.from(this.content).filter(c => c.match(/[a-z]/i)).join("");
+    // Note that the Array.from() is important to make the string into an array.
 
+    // EVEN BETTER FUNCTIONAL PROGRAMMING SOLUTION WHICH USES SHORT CIRCUIT EVALUATION
+    return this.content.match(/[a-z]/gi || []).join("");
+
+  }
   // Returns true if the phrase is a palindrome, false otherwise.
   this.palindrome = function palindrome() {
     return this.processedContent() === this.processedContent().reverse();
